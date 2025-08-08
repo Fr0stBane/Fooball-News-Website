@@ -13,7 +13,7 @@ header {
     gap: 20px;
     width: 100%;
     box-sizing: border-box;
-    background: linear-gradient(to right, #ffffff, #505050);
+    background: linear-gradient(to right, #dd0e0e, #505050);
     position: relative;
 }
 
@@ -73,7 +73,7 @@ body {
     border: rgb(0, 0, 0) solid 3px;
     border-radius: 5px;
     display: inline-block;
-    background: linear-gradient(to right, #ffffff, #505050);
+    background: linear-gradient(to right, #dd0e0e, #505050);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 100;
 }
@@ -182,7 +182,7 @@ footer {
     font-weight: 1000;
     font-family: 'Courier New', Courier, monospace;
     height: 60px;
-    background: linear-gradient(to right, #ffffff, #505050);
+    background: linear-gradient(to right, #dd0e0e, #505050);
 }
 
 /* Mobile*/
@@ -253,5 +253,6 @@ img {
     font-size: 20px;
 
 }
+
 
 }
