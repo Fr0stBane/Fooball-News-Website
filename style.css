@@ -1,0 +1,257 @@
+.Name {
+    margin: 0;
+}
+
+header p {
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #ffffff, #505050);
+    position: relative;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: verdana, sans-serif;
+}
+
+.search-bar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.search-bar input {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    width: 250px;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration:none;
+    padding: 5px 10px;
+}
+
+.nav-menu a:hover {
+    color: #000000;
+}
+
+.latest-news {
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.latest-news h2 {
+    margin-top: 2px;
+    border: rgb(0, 0, 0) solid 3px;
+    border-radius: 5px;
+    display: inline-block;
+    background: linear-gradient(to right, #ffffff, #505050);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+}
+
+.featured-teams {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.news-ticker {
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(to right, #dd0e0e, #505050);
+  border: #000000 solid 1px;
+  padding: 10px;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.news-content {
+  display: inline-block;
+  padding-left: 100%; /* Start off-screen */
+  animation: scroll 20s linear infinite;
+}
+
+.news-content span {
+  margin-right: 40px;
+}
+
+.news-ticker:hover .news-content {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.news-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.news-card {
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 25px;
+  transition: all 0.2s ease;
+}
+
+.news-card:hover {
+  border-color: #ddd;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.news-card time {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.news-card h3 {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.news-card h3 a {
+  color: #222;
+  text-decoration: none;
+}
+
+.news-card h3 a:hover {
+  color: #0066cc;
+}
+
+.news-card p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+}
+
+footer {
+    font-weight: 1000;
+    font-family: 'Courier New', Courier, monospace;
+    height: 60px;
+    background: linear-gradient(to right, #ffffff, #505050);
+}
+
+/* Mobile*/
+@media (max-width: 768px) {
+.nav-menu {
+    /* Convert horizontal to vertical */
+    flex-direction:row;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 10px;
+    padding-left: 40px;
+}
+
+header {
+    align-items: center;
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #dd0e0e, #505050);
+    position: relative;
+    grid-template-columns: 10cap auto;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+header p {
+    margin: 0px;
+    text-align: center;
+    padding-right: 20px;
+
+}
+
+.search-bar {
+    position: absolute;
+    display: flex;
+    padding-top: 60px;
+    padding-right: 350px;
+    margin-bottom: 10px;
+    width: 10px;
+    box-sizing: border-box;
+    width: 90px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: verdana, sans-serif;
+}
+
+header, .nav-menu, .search-bar {
+    max-width: 100%;
+    margin-left: auto;
+}    
+
+img {
+    justify-content: center;
+    width: 80px;
+    margin-top: 0%;
+
+
+}
+
+.Name {
+    margin-top: 0px;
+    font-size: 20px;
+
+}
+
+}
