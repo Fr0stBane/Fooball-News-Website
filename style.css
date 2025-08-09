@@ -95,7 +95,7 @@ body {
 
 .news-content {
   display: inline-block;
-  padding-left: 100%; /* Start off-screen */
+  padding-left: 100%;
   animation: scroll 20s linear infinite;
 }
 
@@ -179,16 +179,41 @@ body {
 }
 
 footer {
-    font-weight: 1000;
-    font-family: 'Courier New', Courier, monospace;
-    height: 60px;
-    background: linear-gradient(to right, #dd0e0e, #505050);
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #4CAF50;  
+}
+
+
+footer a + a::before {
+    content: '|';
+    margin: 0 10px;
+    color: #666;
 }
 
 /* Mobile*/
 @media (max-width: 768px) {
 .nav-menu {
-    /* Convert horizontal to vertical */
     flex-direction:row;
     gap: 10px;
     width: 100%;
@@ -256,3 +281,4 @@ img {
 
 
 }
+
