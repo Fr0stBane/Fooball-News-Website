@@ -76,3 +76,31 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initial state
   applySearch();
 });
+
+
+/* ===== Added functionality ===== */
+document.addEventListener("DOMContentLoaded", () => {
+  const themeButton = document.querySelector(".theme-toggle");
+
+  if (localStorage.getItem("football-theme") === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+
+  function updateThemeIcon() {
+    if (!themeButton) return;
+    themeButton.textContent =
+      document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+  }
+
+  updateThemeIcon();
+
+  themeButton?.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    localStorage.setItem(
+      "football-theme",
+      document.body.classList.contains("dark-mode") ? "dark" : "light"
+    );
+    updateThemeIcon();
+  });
+
+});

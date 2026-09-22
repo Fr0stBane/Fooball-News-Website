@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login – Football News</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Football News Home">
+          <img class="football" src="Football.png" alt="Football News Logo" />
+          <div class="brand-text">
+            <h1 class="Name">Football News</h1>
+            <p class="tagline">Daily football news</p>
+          </div>
+        </a>
+
+        <!-- Mobile nav toggle -->
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+
+        <!-- Nav Bar -->
+        <nav class="nav-menu" id="primary-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="#">Matches</a>
+          <a href="#">Teams</a>
+          <a href="index.html">News</a>
+          <a href="Login.html" class="active">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="auth-section">
+        <div class="auth-card">
+          <h2 class="auth-title">Welcome back ⚽</h2>
+          <p class="auth-subtitle">Log in to your Football News account</p>
+
+          <form id="login-form" novalidate>
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                autocomplete="email"
+                required
+              />
+              <small class="error-msg" id="email-error"></small>
+            </div>
+
+            <div class="field">
+              <label for="password">Password</label>
+              <div class="password-wrap">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Enter your password"
+                  autocomplete="current-password"
+                  minlength="6"
+                  required
+                />
+                <button
+                  type="button"
+                  class="toggle-password"
+                  aria-label="Show password"
+                >
+                  👁
+                </button>
+              </div>
+              <small class="error-msg" id="password-error"></small>
+            </div>
+
+            <div class="form-row">
+              <label class="checkbox">
+                <input type="checkbox" id="remember" />
+                Remember me
+              </label>
+              <a href="#" class="forgot">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn-login">Log In</button>
+
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <p class="auth-switch">
+            Don't have an account? <a href="#">Sign up</a>
+          </p>
+          <p class="demo-hint">Demo login → <b>demo@football.com</b> / <b>football123</b></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2023 Football News. All rights reserved.</p>
+      <p>
+        Follow us on:
+        <a href="#">Facebook</a> |
+        <a href="#">Twitter</a> |
+        <a href="#">Instagram</a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>

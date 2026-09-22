@@ -16,6 +16,7 @@
         </div>
 
         <!-- Search Bar -->
+        <div class="header-actions"><button class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button><button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button></div>
         <div class="search-bar">
             <input type="text" placeholder="Search for news..." />
             <button>Search</button>
@@ -24,58 +25,95 @@
         <!-- Nav Bar -->
         <nav class="nav-menu">
             <a href="#">Home</a>
-            <a href="#">Matches</a>
-            <a href="#">Teams</a>
+            <a href="matches.html">Matches</a>
+            <a href="teams.html">Teams</a>
             <a href="#">News</a>
-            <a href="#">Login</a>
+            <a href="Login.html">Login</a>
         </nav>
     </header>
 
         <!--News-Ticker-->
     <div class="news-ticker">
   <div class="news-content">
-    <span>Breaking News 1: This is the first news item.</span>
-    <span>Breaking News 2: This is the second news item.</span>
-    <span>Breaking News 3: This is the third news item.</span>
+    <span>Breaking News 1: This is the first news.</span>
+    <span>Breaking News 2: This is the second news.</span>
+    <span>Breaking News 3: This is the third news.</span>
   </div>
 </div>
-        <!--News-Section-->
-<div class="news-section">
+        
+    <section class="hero">
+      <div>
+        <p class="eyebrow">THE BEAUTIFUL GAME</p>
+        <h2>Everything football in one place.</h2>
+        <p>Latest stories, match scores, fixtures and team updates.</p>
+        <a class="hero-button" href="#latest">Explore latest news →</a>
+      </div>
+    </section>
+
+    <section class="scores-section">
+      <div class="section-heading">
+        <h2>Football Scores</h2>
+        <a class="read-more" href="matches.html">All matches →</a>
+      </div>
+      <div class="score-grid">
+        <article class="score-card">
+          <div class="league">Premier League · FT</div>
+          <div class="score-teams"><span>Manchester City</span><strong class="score">3 - 1</strong><span>Arsenal</span></div>
+        </article>
+        <article class="score-card live">
+          <div class="league"><span class="live-dot"></span> LaLiga · LIVE</div>
+          <div class="score-teams"><span>Barcelona</span><strong class="score">2 - 1</strong><span>Real Madrid</span></div>
+        </article>
+        <article class="score-card">
+          <div class="league">Champions League · Upcoming</div>
+          <div class="score-teams"><span>Bayern Munich</span><strong class="score">20:00</strong><span>PSG</span></div>
+        </article>
+      </div>
+    </section>
+
+<!--News-Section-->
+<div class="news-section" id="latest">
   <h2 class="section-title">Latest Updates</h2>
   <div class="news-container">
     <article class="news-card">
+      <img class="news-image" src="https://images.unsplash.com/photo-1486286701208-1d58e9338013?auto=format&fit=crop&w=900&q=80" alt="Football news image" loading="lazy">
       <time datetime="2023-11-15">Nov 15, 2023</time>
-      <h3><a href="#">🚨 BREAKING: Santiago Nutmeguez Completes Shocking €300 Million Move to Antarctica FC After Nutmegging the Entire Transfer Board. 😳❄️</a></h3>
+      <h3><a href="article.html?article=transfer">🚨 BREAKING: Santiago Nutmeguez Completes Shocking €300 Million Move to Antarctica FC After Nutmegging the Entire Transfer Board. 😳❄️</a></h3>
       <p>In the most outrageous transfer of the Ice Age, Argentine trickster Santiago Nutmeguez has officially joined Antarctica FC for a record €300 million, plus a bonus of 700 snowmobiles and a penguin-shaped jacuzzi.</p>
     </article>
 
     <article class="news-card">
+      <img class="news-image" src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=900&q=80" alt="Football news image" loading="lazy">
       <time datetime="2023-11-10">Nov 10, 2023</time>
-      <h3><a href="#">🗞️ Barry McBoot Gets Red Card After Slide-Tackling Ref During National Anthem.</a></h3>
+      <h3><a href="article.html?article=matchday">🗞️ Barry McBoot Gets Red Card After Slide-Tackling Ref During National Anthem.</a></h3>
       <p>The Scottish tackling menace Barry McBoot has done it again. In a friendly between Antarctica FC and Icelandic Volcano XI, McBoot was sent off before kickoff—for slide-tackling the referee during the national anthem.</p>
     </article>
 
     <article class="news-card">
+      <img class="news-image" src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?auto=format&fit=crop&w=900&q=80" alt="Football news image" loading="lazy">
       <time datetime="2023-11-05">Nov 5, 2023</time>
-      <h3><a href="#">🗞️ Dimitri Vodkalov Scores 8 Goals While Drunk, Club Accidentally Renames Stadium After His Hangover.</a></h3>
+      <h3><a href="article.html?article=stadium">🗞️ Dimitri Vodkalov Scores 8 Goals While Drunk, Club Accidentally Renames Stadium After His Hangover.</a></h3>
       <p>Russian winger Dimitri Vodkalov stunned the world by scoring 8 goals in one half… despite being visibly intoxicated and calling the referee “mama.”</p>
     </article>
 
     <article class="news-card">
+      <img class="news-image" src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?auto=format&fit=crop&w=900&q=80" alt="Football news image" loading="lazy">
       <time datetime="2023-11-05">Nov 5, 2023</time>
-      <h3><a href="#">🗞️ Mamadou Cheesebag Scores Goal, Headbutts Goalpost in Celebration, Knocked Out Cold.</a></h3>
+      <h3><a href="article.html?article=youngsters">🗞️ Mamadou Cheesebag Scores Goal, Headbutts Goalpost in Celebration, Knocked Out Cold.</a></h3>
       <p>After finally scoring his first goal in 9 years, legendary brick-wall defender Mamadou Cheesebag sprinted straight into the goalpost head-first shouting, “THIS ONE’S FOR THE LADS!!!”</p>
     </article>
 
     <article class="news-card">
+      <img class="news-image" src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=900&q=80" alt="Football news image" loading="lazy">
       <time datetime="2023-11-05">Nov 5, 2023</time>
-      <h3><a href="#">🗞️ Kevin O’Slidey Slides Into Opponent’s Bench, Gets Signed by Other Team Mid-Match.</a></h3>
+      <h3><a href="article.html?article=training">🗞️ Kevin O’Slidey Slides Into Opponent’s Bench, Gets Signed by Other Team Mid-Match.</a></h3>
       <p>Irish fullback Kevin O’Slidey attempted a sliding tackle from 50 yards… but couldn’t stop. He slid through the pitch, across the sidelines, into the opponent’s dugout, knocked over their assistant manager, and accidentally signed a 2-year contract while crashing through the clipboard.</p>
     </article>
 
     <article class="news-card">
+      <img class="news-image" src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=900&q=80" alt="Football news image" loading="lazy">
       <time datetime="2023-11-05">Nov 5, 2023</time>
-      <h3><a href="#">🗞️ Team Forgets the Ball, Plays 90 Minutes with a Coconut – Wins 3-1 Anyway.</a></h3>
+      <h3><a href="article.html?article=weekend">🗞️ Team Forgets the Ball, Plays 90 Minutes with a Coconut – Wins 3-1 Anyway.</a></h3>
       <p>In today’s dumbest football disaster, Pineapple Rovers accidentally left the match ball on the team bus… and played the entire first half using a coconut they found near the vending machine.
       No one noticed.
       Referee:
