@@ -96,6 +96,30 @@ header > div{
   gap: 8px;
 }
 
+.site-header .header-inner{
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.site-header .brand{
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.site-header .nav-toggle{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.site-header .nav-menu{
+  grid-column: 1 / -1;
+  grid-row: 2;
+}
+
 .Name{
   grid-area: brand;
   margin: 0;
