@@ -317,18 +317,12 @@ footer a:hover{
     display: inline-flex;
   }
 
-  .nav-menu{
+  .mobile-nav .nav-menu{
     display: none;
   }
 
-  .nav-menu.is-open{
+  .mobile-nav .nav-menu.is-open{
     display: flex;
-  }
-
-  /* Pages without a mobile toggle keep their navigation visible. */
-  header:not(:has(.nav-toggle)) .nav-menu{
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .search-bar input{
