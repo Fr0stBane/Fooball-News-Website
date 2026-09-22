@@ -18,6 +18,12 @@
 
 *{ box-sizing: border-box; }
 
+html,
+body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -91,6 +97,7 @@ header > div{
 }
 
 .Name{
+  grid-area: brand;
   margin: 0;
   color: #fff;
   font-size: clamp(1.1rem, 2vw, 1.6rem);
@@ -316,6 +323,12 @@ footer a:hover{
 
   .nav-menu.is-open{
     display: flex;
+  }
+
+  /* Pages without a mobile toggle keep their navigation visible. */
+  header:not(:has(.nav-toggle)) .nav-menu{
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .search-bar input{
@@ -718,6 +731,38 @@ body.dark-mode .news-card time {
 
   .news-card img.news-image {
     height: 210px;
+  }
+
+  header{
+    padding: 12px;
+    gap: 10px;
+  }
+
+  header > img.football{
+    width: 48px;
+    height: 48px;
+  }
+
+  .Name{
+    font-size: 1.25rem;
+  }
+
+  .nav-menu{
+    gap: 6px;
+  }
+
+  .nav-menu a{
+    padding: 8px 9px;
+    font-size: .9rem;
+  }
+
+  .score-card .score-teams{
+    gap: 6px;
+    font-size: .92rem;
+  }
+
+  .score-card .score{
+    font-size: 1.05rem;
   }
 }
 
